@@ -1,0 +1,23 @@
+23:54:43 **** Auto Build of configuration Debug for project br_fft ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fft_br.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fft_br.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fft_br.d" -MT"src/fft_br.o" -o "src/fft_br.o" "../src/fft_br.c"
+'Finished building: ../src/fft_br.c'
+' '
+'Building target: br_fft.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "br_fft.elf"  ./src/fft_br.o ./src/testbench.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: br_fft.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size br_fft.elf  |tee "br_fft.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80256	  14868	  39776	 134900	  20ef4	br_fft.elf
+'Finished building: br_fft.elf.size'
+' '
+
+23:54:45 Build Finished (took 2s.346ms)
+

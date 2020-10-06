@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Jun 12 01:44:49 2020
+# Process ID: 28572
+# Current directory: E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.sdk/webtalk/webtalk.log
+# Journal file: E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,1608 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jun 11 21:37:26 2020
+# Process ID: 18480
+# Current directory: E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1
+# Command line: vivado.exe -log design_1_FFT_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FFT_0_0.tcl
+# Log file: E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1/design_1_FFT_0_0.vds
+# Journal file: E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_FFT_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/FFT-final/FFT-final'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_FFT_0_0 -part xc7z007sclg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7724 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 374.785 ; gain = 107.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FFT_0_0' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ip/design_1_FFT_0_0/synth/design_1_FFT_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'FFT' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 35'b00000000000000000000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 35'b00000000000000000000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 35'b00000000000000000000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 35'b00000000000000000000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 35'b00000000000000000000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 35'b00000000000000000000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 35'b00000000000000000000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 35'b00000000000000000000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 35'b00000000000000000000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 35'b00000000000000000000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 35'b00000000000000000000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 35'b00000000000000000000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 35'b00000000000000000000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 35'b00000000000000000000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 35'b00000000000000000000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 35'b00000000000000000001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 35'b00000000000000000010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 35'b00000000000000000100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 35'b00000000000000001000000000000000000 
+	Parameter ap_ST_fsm_state20 bound to: 35'b00000000000000010000000000000000000 
+	Parameter ap_ST_fsm_state21 bound to: 35'b00000000000000100000000000000000000 
+	Parameter ap_ST_fsm_state22 bound to: 35'b00000000000001000000000000000000000 
+	Parameter ap_ST_fsm_state23 bound to: 35'b00000000000010000000000000000000000 
+	Parameter ap_ST_fsm_state24 bound to: 35'b00000000000100000000000000000000000 
+	Parameter ap_ST_fsm_state25 bound to: 35'b00000000001000000000000000000000000 
+	Parameter ap_ST_fsm_state26 bound to: 35'b00000000010000000000000000000000000 
+	Parameter ap_ST_fsm_state27 bound to: 35'b00000000100000000000000000000000000 
+	Parameter ap_ST_fsm_state28 bound to: 35'b00000001000000000000000000000000000 
+	Parameter ap_ST_fsm_state29 bound to: 35'b00000010000000000000000000000000000 
+	Parameter ap_ST_fsm_state30 bound to: 35'b00000100000000000000000000000000000 
+	Parameter ap_ST_fsm_state31 bound to: 35'b00001000000000000000000000000000000 
+	Parameter ap_ST_fsm_state32 bound to: 35'b00010000000000000000000000000000000 
+	Parameter ap_ST_fsm_state33 bound to: 35'b00100000000000000000000000000000000 
+	Parameter ap_ST_fsm_state34 bound to: 35'b01000000000000000000000000000000000 
+	Parameter ap_ST_fsm_state35 bound to: 35'b10000000000000000000000000000000000 
+	Parameter C_S_AXI_CONTROL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_BUS_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:118]
+INFO: [Synth 8-6157] synthesizing module 'FFT_CONTROL_BUS_s_axi' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_CONTROL_BUS_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_CONTROL_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_CONTROL_CTRL bound to: 5'b10100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_CONTROL_BUS_s_axi.v:196]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_CONTROL_BUS_s_axi' (1#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_CONTROL_BUS_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FFT_tmparr_real' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_tmparr_real.v:43]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_tmparr_real_ram' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_tmparr_real.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_tmparr_real.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_tmparr_real_ram' (2#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_tmparr_real.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_tmparr_real' (3#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_tmparr_real.v:43]
+INFO: [Synth 8-6157] synthesizing module 'FFT_bin' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_bin.v:43]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter AddressRange bound to: 10 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_bin_ram' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_bin.v:9]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_bin.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_bin_ram' (4#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_bin.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_bin' (5#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_bin.v:43]
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_s' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_state3 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_state4 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state5 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_state6 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state7 bound to: 7'b1000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:45]
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_bkb' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_bkb.v:42]
+	Parameter DataWidth bound to: 100 - type: integer 
+	Parameter AddressRange bound to: 13 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_bkb_rom' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_bkb.v:9]
+	Parameter DWIDTH bound to: 100 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 13 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_bkb.v:21]
+INFO: [Synth 8-3876] $readmem data file './sin_or_cos_float_bkb_rom.dat' is read successfully [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_bkb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_bkb_rom' (6#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_bkb.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_bkb' (7#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_bkb.v:42]
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_cud' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_cud.v:42]
+	Parameter DataWidth bound to: 30 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_cud_rom' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_cud.v:9]
+	Parameter DWIDTH bound to: 30 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_cud.v:21]
+INFO: [Synth 8-3876] $readmem data file './sin_or_cos_float_cud_rom.dat' is read successfully [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_cud.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_cud_rom' (8#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_cud.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_cud' (9#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_cud.v:42]
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_dEe' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_dEe.v:42]
+	Parameter DataWidth bound to: 23 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_dEe_rom' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_dEe.v:9]
+	Parameter DWIDTH bound to: 23 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_dEe.v:21]
+INFO: [Synth 8-3876] $readmem data file './sin_or_cos_float_dEe_rom.dat' is read successfully [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_dEe.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_dEe_rom' (10#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_dEe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_dEe' (11#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_dEe.v:42]
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_eOg' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_eOg.v:42]
+	Parameter DataWidth bound to: 15 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sin_or_cos_float_eOg_rom' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_eOg.v:9]
+	Parameter DWIDTH bound to: 15 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_eOg.v:21]
+INFO: [Synth 8-3876] $readmem data file './sin_or_cos_float_eOg_rom.dat' is read successfully [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_eOg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_eOg_rom' (12#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_eOg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_eOg' (13#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_eOg.v:42]
+INFO: [Synth 8-6157] synthesizing module 'scaled_fixed2ieee' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:43]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:370]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:386]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:390]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:398]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:402]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:406]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:468]
+INFO: [Synth 8-6155] done synthesizing module 'scaled_fixed2ieee' (14#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/scaled_fixed2ieee.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_mux_83_1_1_1' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mux_83_1_1_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 1 - type: integer 
+	Parameter din2_WIDTH bound to: 1 - type: integer 
+	Parameter din3_WIDTH bound to: 1 - type: integer 
+	Parameter din4_WIDTH bound to: 1 - type: integer 
+	Parameter din5_WIDTH bound to: 1 - type: integer 
+	Parameter din6_WIDTH bound to: 1 - type: integer 
+	Parameter din7_WIDTH bound to: 1 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFT_mux_83_1_1_1' (15#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mux_83_1_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_mux_164_1_1_1' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mux_164_1_1_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 1 - type: integer 
+	Parameter din1_WIDTH bound to: 1 - type: integer 
+	Parameter din2_WIDTH bound to: 1 - type: integer 
+	Parameter din3_WIDTH bound to: 1 - type: integer 
+	Parameter din4_WIDTH bound to: 1 - type: integer 
+	Parameter din5_WIDTH bound to: 1 - type: integer 
+	Parameter din6_WIDTH bound to: 1 - type: integer 
+	Parameter din7_WIDTH bound to: 1 - type: integer 
+	Parameter din8_WIDTH bound to: 1 - type: integer 
+	Parameter din9_WIDTH bound to: 1 - type: integer 
+	Parameter din10_WIDTH bound to: 1 - type: integer 
+	Parameter din11_WIDTH bound to: 1 - type: integer 
+	Parameter din12_WIDTH bound to: 1 - type: integer 
+	Parameter din13_WIDTH bound to: 1 - type: integer 
+	Parameter din14_WIDTH bound to: 1 - type: integer 
+	Parameter din15_WIDTH bound to: 1 - type: integer 
+	Parameter din16_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FFT_mux_164_1_1_1' (16#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mux_164_1_1_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_mul_mul_15ns_fYi' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_fYi.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_mul_mul_15ns_fYi_DSP48_0' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_fYi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_mul_mul_15ns_fYi_DSP48_0' (17#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_fYi.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_mul_mul_15ns_fYi' (18#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_fYi.v:13]
+INFO: [Synth 8-6157] synthesizing module 'FFT_mul_mul_15ns_g8j' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_g8j.v:13]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 15 - type: integer 
+	Parameter din1_WIDTH bound to: 15 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFT_mul_mul_15ns_g8j_DSP48_1' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_g8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_mul_mul_15ns_g8j_DSP48_1' (19#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_g8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_mul_mul_15ns_g8j' (20#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_mul_mul_15ns_g8j.v:13]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:605]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:611]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:631]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:653]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:657]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:659]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:693]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:695]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:701]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:705]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:707]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:709]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:745]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:747]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:785]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:813]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:841]
+INFO: [Synth 8-6155] done synthesizing module 'sin_or_cos_float_s' (21#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'FFT_faddfsub_32nshbi' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_faddfsub_32nshbi.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_faddfsub_1_full_dsp_32' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_faddfsub_1_full_dsp_32.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_faddfsub_1_full_dsp_32.vhd:208]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_faddfsub_1_full_dsp_32' (39#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_faddfsub_1_full_dsp_32.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_faddfsub_32nshbi' (40#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_faddfsub_32nshbi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fadd_32ns_32nibs' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fadd_32ns_32nibs.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fadd_1_full_dsp_32' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fadd_1_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fadd_1_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fadd_1_full_dsp_32' (41#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fadd_1_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fadd_32ns_32nibs' (42#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fadd_32ns_32nibs.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fsub_32ns_32njbC' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fsub_32ns_32njbC.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fsub_1_full_dsp_32' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fsub_1_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fsub_1_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fsub_1_full_dsp_32' (43#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fsub_1_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fsub_32ns_32njbC' (44#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fsub_32ns_32njbC.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fmul_32ns_32nkbM' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fmul_32ns_32nkbM.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fmul_0_max_dsp_32' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fmul_0_max_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fmul_0_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fmul_0_max_dsp_32' (52#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fmul_0_max_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fmul_32ns_32nkbM' (53#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fmul_32ns_32nkbM.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_fdiv_32ns_32nlbW' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fdiv_32ns_32nlbW.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 7 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_fdiv_5_no_dsp_32' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fdiv_5_no_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 5 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fdiv_5_no_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_fdiv_5_no_dsp_32' (60#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_fdiv_5_no_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_fdiv_32ns_32nlbW' (61#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fdiv_32ns_32nlbW.v:11]
+INFO: [Synth 8-6157] synthesizing module 'FFT_sitofp_32ns_3mb6' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_sitofp_32ns_3mb6.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FFT_ap_sitofp_0_no_dsp_32' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_sitofp_0_no_dsp_32.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_sitofp_0_no_dsp_32.vhd:192]
+INFO: [Synth 8-256] done synthesizing module 'FFT_ap_sitofp_0_no_dsp_32' (68#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/ip/FFT_ap_sitofp_0_no_dsp_32.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_sitofp_32ns_3mb6' (69#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_sitofp_32ns_3mb6.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:1834]
+INFO: [Synth 8-6155] done synthesizing module 'FFT' (70#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FFT_0_0' (71#1) [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ip/design_1_FFT_0_0/synth/design_1_FFT_0_0.v:58]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized41 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized41 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized41 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized41 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized41 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DATA[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[7]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[6]
+WARNING: [Synth 8-3331] design norm_zero_det has unconnected port DIST[5]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized12 has unconnected port B[31]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port CLK
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[30]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[29]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[28]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[27]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[26]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[25]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[24]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[23]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[22]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[21]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[20]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[19]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[18]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[17]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[16]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[15]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[14]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[13]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[12]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[11]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[10]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[9]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[8]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[7]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[6]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[5]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[4]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[3]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[2]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[1]
+WARNING: [Synth 8-3331] design fix_to_flt_conv_exp has unconnected port A[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized15 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized39 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized39 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized39 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized39 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized39 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SCLR
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 588.762 ; gain = 321.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 588.762 ; gain = 321.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 588.762 ; gain = 321.367
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3253 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ip/design_1_FFT_0_0/constraints/FFT_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ip/design_1_FFT_0_0/constraints/FFT_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 835.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  FDE => FDRE: 12 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 836.934 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.250 . Memory (MB): peak = 838.250 ; gain = 3.250
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 838.250 ; gain = 570.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 838.250 ; gain = 570.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 838.250 ; gain = 570.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'FFT_CONTROL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'FFT_CONTROL_BUS_s_axi'
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "tmp_1_fu_382_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_3_fu_411_p2" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "exitcond_fu_228_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_1_fu_382_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_3_fu_411_p2" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "exitcond_fu_228_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "tmp_5_fu_600_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_7_fu_605_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_348_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 5 [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:757]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:723]
+INFO: [Synth 8-5546] ROM "tmp_5_fu_600_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_7_fu_605_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_348_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_cast_cast_fu_879_p3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_det" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'tmp_real_addr_2_reg_1016_reg[9:0]' into 'tmp_imag_addr_2_reg_1021_reg[9:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:997]
+INFO: [Synth 8-4471] merging register 'tmp_real_addr_3_reg_1026_reg[9:0]' into 'tmp_imag_addr_3_reg_1031_reg[9:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:998]
+INFO: [Synth 8-4471] merging register 'm2_reg_978_reg[9:0]' into 'tmp_8_reg_973_reg[9:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:1004]
+INFO: [Synth 8-4471] merging register 'tmp_8_reg_973_reg[30:10]' into 'm_cast_reg_968_reg[31:11]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:1838]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_4_reg_917_reg' and it is trimmed from '11' to '10' bits. [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT.v:1079]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_816_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_fu_558_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond5_fu_570_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_7_fu_624_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond2_fu_695_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond4_fu_717_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_fu_816_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond3_fu_558_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond5_fu_570_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_7_fu_624_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond2_fu_695_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond4_fu_717_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "array_last_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "array_last_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "array_r_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "array_r_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oparray_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oparray_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oparray_last_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oparray_last_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "a1_reg_309" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "k2_reg_411" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_461_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'FFT_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'FFT_CONTROL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 838.250 ; gain = 570.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/FFT_faddfsub_32nshbi_U19/FFT_ap_faddfsub_1_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/FFT_faddfsub_32nshbi_U19/FFT_ap_faddfsub_1_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_faddfsub_32nshbi_U19/FFT_ap_faddfsub_1_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/FFT_faddfsub_32nshbi_U19/FFT_ap_faddfsub_1_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_fadd_32ns_32nibs_U20/FFT_ap_fadd_1_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/FFT_fadd_32ns_32nibs_U20/FFT_ap_fadd_1_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_fadd_32ns_32nibs_U20/FFT_ap_fadd_1_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/FFT_fadd_32ns_32nibs_U20/FFT_ap_fadd_1_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fsub_32ns_32njbC:/FFT_ap_fsub_1_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fsub_32ns_32njbC:/FFT_ap_fsub_1_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fsub_32ns_32njbC:/FFT_ap_fsub_1_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fsub_32ns_32njbC:/FFT_ap_fsub_1_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fmul_32ns_32nkbM:/FFT_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fmul_32ns_32nkbM:/FFT_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fmul_32ns_32nkbM:/FFT_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'FFT_fmul_32ns_32nkbM:/FFT_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized0) to 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'FFT_fdiv_32ns_32nlbW:/FFT_ap_fdiv_5_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/FFT_sitofp_32ns_3mb6_U29/FFT_ap_sitofp_0_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'B' and it is trimmed from '13' to '12' bits. [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:757]
+INFO: [Synth 8-5546] ROM "tmp_5_fu_600_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_348_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_7_fu_605_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:735]
+WARNING: [Synth 8-6014] Unused sequential element p_0_out was removed. 
+INFO: [Synth 8-4471] merging register 'FFT_fdiv_32ns_32nlbW_U28/ce_r_reg' into 'FFT_fdiv_32ns_32nlbW_U27/ce_r_reg' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fdiv_32ns_32nlbW.v:53]
+INFO: [Synth 8-4471] merging register 'FFT_fdiv_32ns_32nlbW_U28/din1_buf1_reg[31:0]' into 'FFT_fdiv_32ns_32nlbW_U27/din1_buf1_reg[31:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/FFT_fdiv_32ns_32nlbW.v:57]
+INFO: [Synth 8-5544] ROM "exitcond5_fu_570_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_7_fu_624_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_fu_717_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond3_fu_558_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond2_fu_695_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_816_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "exitcond_fu_228_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_1_fu_382_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_3_fu_411_p2" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'tmp_V_1_reg_999_reg[22:0]' into 'tmp_V_1_reg_999_reg[22:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:464]
+INFO: [Synth 8-5546] ROM "tmp_7_fu_605_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_5_fu_600_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_348_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "exitcond_fu_228_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tmp_1_fu_382_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_3_fu_411_p2" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'tmp_V_1_reg_999_reg[22:0]' into 'tmp_V_1_reg_999_reg[22:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:464]
+INFO: [Synth 8-4471] merging register 'B_trunc_V_reg_1075_reg[14:0]' into 'B_trunc_V_reg_1075_reg[14:0]' [e:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.srcs/sources_1/bd/design_1/ipshared/347b/hdl/verilog/sin_or_cos_float_s.v:442]
+INFO: [Synth 8-5546] ROM "tmp_7_fu_605_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_5_fu_600_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_6_fu_348_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "tmp_7_fu_624_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_fu_717_p2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'inst/a1_reg_309_reg[29]' (FDRE) to 'inst/a1_reg_309_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[30]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[29]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[28]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[27]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[26]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[25]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[24]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[23]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[22]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[21]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[20]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[19]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[18]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[17]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[16]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[15]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[14]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[13]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[12]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[11]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[10]' (FDE) to 'inst/FFT_sitofp_32ns_3mb6_U29/din0_buf1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/FFT_sitofp_32ns_3mb6_U29/\din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/FFT_sitofp_32ns_3mb6_U29/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din0_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U28/din0_buf1_reg[30] )
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/ref_4oPi_table_100_V_U/sin_or_cos_float_bkb_rom_U/q0_reg[70]' (FDE) to 'sin_or_cos_float_s:/ref_4oPi_table_100_V_U/sin_or_cos_float_bkb_rom_U/q0_reg[84]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/ref_4oPi_table_100_V_U/sin_or_cos_float_bkb_rom_U/q0_reg[96]' (FDE) to 'sin_or_cos_float_s:/ref_4oPi_table_100_V_U/sin_or_cos_float_bkb_rom_U/q0_reg[99]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[10]' (FDE) to 'inst/tmp_33_reg_941_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[1]' (FDE) to 'inst/tmp_33_reg_941_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[2]' (FDE) to 'inst/tmp_33_reg_941_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[3]' (FDE) to 'inst/tmp_33_reg_941_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[4]' (FDE) to 'inst/tmp_33_reg_941_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[5]' (FDE) to 'inst/tmp_33_reg_941_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[6]' (FDE) to 'inst/tmp_33_reg_941_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[7]' (FDE) to 'inst/tmp_33_reg_941_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[8]' (FDE) to 'inst/tmp_33_reg_941_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/m_reg_936_reg[9]' (FDE) to 'inst/tmp_33_reg_941_reg[8]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (sin_or_cos_float_s:/\second_order_float_s_U/sin_or_cos_float_eOg_rom_U/q0_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/ce_r_reg )
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[10]' (FDE) to 'inst/tmp_8_reg_973_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[1]' (FDE) to 'inst/tmp_8_reg_973_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[2]' (FDE) to 'inst/tmp_8_reg_973_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[3]' (FDE) to 'inst/tmp_8_reg_973_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[4]' (FDE) to 'inst/tmp_8_reg_973_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[5]' (FDE) to 'inst/tmp_8_reg_973_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[6]' (FDE) to 'inst/tmp_8_reg_973_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[7]' (FDE) to 'inst/tmp_8_reg_973_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[8]' (FDE) to 'inst/tmp_8_reg_973_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/m_cast_reg_968_reg[9]' (FDE) to 'inst/tmp_8_reg_973_reg[8]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[18]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[15]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[17]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[16]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[14]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[14]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[15]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (sin_or_cos_float_s:/\grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[15] )
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[13]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[13]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[12]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[12]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[11]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[11]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[10]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[10]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[9]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[9]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[8]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[8]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[7]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[7]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[6]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[6]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[5]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[5]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[4]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[4]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[3]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[3]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[2]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[2]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[1]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[1]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]'
+INFO: [Synth 8-3886] merging instance 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/p_Result_s_reg_482_reg[0]' (FDE) to 'sin_or_cos_float_s:/grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sin_or_cos_float_s:/\grp_scaled_fixed2ieee_fu_218/out_bits_0_V_reg_477_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/FFT_faddfsub_32nshbi_U19/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/FFT_fadd_32ns_32nibs_U20/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sin_or_cos_float_s:/\grp_scaled_fixed2ieee_fu_218/ap_return_preg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\m_cast_reg_968_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/FFT_sitofp_32ns_3mb6_U29/\dout_r_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\tmp_10_reg_952_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\FFT_fdiv_32ns_32nlbW_U27/din1_buf1_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module FFT_CONTROL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module FFT_CONTROL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[47]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[46]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[45]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[44]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[43]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[42]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[41]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[40]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[39]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[38]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[37]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[36]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[35]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[34]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[33]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[32]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[31]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[30]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[29]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[28]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[27]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[26]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[25]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[24]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[23]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[22]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[21]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[20]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[19]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[18]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[17]) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[47]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[46]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[45]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[44]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[43]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[42]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[41]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[40]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[39]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[38]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[37]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[36]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[35]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[34]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[33]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[32]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[31]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[30]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[29]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[28]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[27]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[26]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[25]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[24]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[23]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[22]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[21]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[20]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[19]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[18]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[17]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[15]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[14]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[13]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[12]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[11]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[10]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[9]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[8]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[7]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[6]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[5]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[4]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[3]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[2]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[1]__0) is unused and will be removed from module sin_or_cos_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_0_out[0]__0) is unused and will be removed from module sin_or_cos_float_s.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized3.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_sin_or_cos_float_s_fu_431/\not_do_cos_i_reg_1080_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/grp_sin_or_cos_float_s_fu_446/\not_do_cos_i_reg_1080_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/FFT_fsub_32ns_32njbC_U21/ce_r_reg)
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:52 ; elapsed = 00:01:57 . Memory (MB): peak = 838.461 ; gain = 571.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/i_2_0/tmparr_real_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_2_1/tmparr_imag_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_2_2/tmp_real_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_2_3/tmp_imag_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:07 ; elapsed = 00:02:12 . Memory (MB): peak = 932.297 ; gain = 664.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:15 ; elapsed = 00:02:20 . Memory (MB): peak = 1009.977 ; gain = 742.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/tmparr_real_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/tmparr_imag_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/tmp_real_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/tmp_imag_U/FFT_tmparr_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:25 ; elapsed = 00:02:30 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:27 ; elapsed = 00:02:33 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:27 ; elapsed = 00:02:33 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:30 ; elapsed = 00:02:35 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:30 ; elapsed = 00:02:35 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:30 ; elapsed = 00:02:35 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:30 ; elapsed = 00:02:36 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |   195|
+|2     |DSP48E1    |     6|
+|3     |DSP48E1_1  |    10|
+|4     |DSP48E1_10 |     2|
+|5     |DSP48E1_2  |     2|
+|6     |DSP48E1_3  |     4|
+|7     |DSP48E1_4  |     2|
+|8     |DSP48E1_5  |     4|
+|9     |DSP48E1_6  |     4|
+|10    |DSP48E1_7  |     4|
+|11    |DSP48E1_8  |     4|
+|12    |DSP48E1_9  |     4|
+|13    |LUT1       |   213|
+|14    |LUT2       |   921|
+|15    |LUT3       |  2108|
+|16    |LUT4       |   881|
+|17    |LUT5       |   818|
+|18    |LUT6       |  2088|
+|19    |MUXCY      |  1689|
+|20    |MUXF7      |   203|
+|21    |MUXF8      |   100|
+|22    |RAM16X1S   |     1|
+|23    |RAMB36E1   |     4|
+|24    |SRL16E     |    52|
+|25    |XORCY      |  1470|
+|26    |FDE        |    12|
+|27    |FDRE       |  3257|
+|28    |FDSE       |    24|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:30 ; elapsed = 00:02:36 . Memory (MB): peak = 1072.566 ; gain = 805.172
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 667 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:44 ; elapsed = 00:02:22 . Memory (MB): peak = 1072.566 ; gain = 555.684
+Synthesis Optimization Complete : Time (s): cpu = 00:02:30 ; elapsed = 00:02:36 . Memory (MB): peak = 1072.566 ; gain = 805.172
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3720 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1072.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 495 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 482 instances
+  FDE => FDRE: 12 instances
+  RAM16X1S => RAM32X1S (RAMS32): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+513 Infos, 209 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:39 ; elapsed = 00:02:45 . Memory (MB): peak = 1072.566 ; gain = 809.707
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1072.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1/design_1_FFT_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FFT_0_0, cache-ID = 151ce47e82d16eba
+INFO: [Coretcl 2-1174] Renamed 535 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1072.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/FFT-final/dma-accelerator-skeleton/dma-accelerator-skeleton.runs/design_1_FFT_0_0_synth_1/design_1_FFT_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_FFT_0_0_utilization_synth.rpt -pb design_1_FFT_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 21:40:31 2020...

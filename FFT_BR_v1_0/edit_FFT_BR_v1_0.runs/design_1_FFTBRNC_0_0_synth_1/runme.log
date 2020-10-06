@@ -1,0 +1,1170 @@
+
+*** Running vivado
+    with args -log design_1_FFTBRNC_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FFTBRNC_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_FFTBRNC_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/FFTBRNC'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_FFTBRNC_0_0 -part xc7z007sclg225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19200 
+WARNING: [Synth 8-2507] parameter declaration becomes local in FFTBRNC_v1_0_M00_AXIS with formal parameter declaration list [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:63]
+WARNING: [Synth 8-2507] parameter declaration becomes local in FFTBRNC_v1_0_S00_AXIS with formal parameter declaration list [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:53]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 383.039 ; gain = 114.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FFTBRNC_0_0' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ip/design_1_FFTBRNC_0_0/synth/design_1_FFTBRNC_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'FFTBRNC_v1_0' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+	Parameter N bound to: 1024 - type: integer 
+	Parameter W bound to: 32 - type: integer 
+	Parameter size bound to: 1024 - type: integer 
+	Parameter n bound to: 10 - type: integer 
+	Parameter ts bound to: 2048 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FFTBRNC_v1_0_S00_AXIS' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:4]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:40]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter NUMBER_OF_INPUT_WORDS bound to: 8 - type: integer 
+	Parameter bit_num bound to: 3 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter WRITE_FIFO bound to: 2'b01 
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:40]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:40]
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
+INFO: [Synth 8-6155] done synthesizing module 'FFTBRNC_v1_0_S00_AXIS' (1#1) [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_S00_AXIS.v:4]
+INFO: [Synth 8-6157] synthesizing module 'FFTBRNC_v1_0_M00_AXIS' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:4]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+	Parameter NUMBER_OF_OUTPUT_WORDS bound to: 8 - type: integer 
+	Parameter WAIT_COUNT_BITS bound to: 5 - type: integer 
+	Parameter bit_num bound to: 4 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_COUNTER bound to: 2'b01 
+	Parameter SEND_STREAM bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:106]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+WARNING: [Synth 8-6104] Input port 'bit_depth' has an internal driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'FFTBRNC_v1_0_M00_AXIS' (2#1) [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:4]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[0] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[1] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[2] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[3] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[4] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[5] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[6] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[7] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[8] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[9] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[10] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[11] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[12] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[13] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[14] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[15] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[16] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[17] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[18] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[19] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[20] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[21] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[22] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[23] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[24] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[25] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[26] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[27] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[28] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[29] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[30] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[31] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[32] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[33] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[34] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[35] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[36] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[37] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[38] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[39] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[40] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[41] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[42] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[43] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[44] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[45] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[46] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[47] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[48] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[49] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[50] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[51] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[52] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[53] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[54] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[55] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[56] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[57] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[58] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[59] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[60] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[61] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[62] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[63] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[64] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[65] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[66] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[67] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[68] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[69] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[70] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[71] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[72] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[73] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[74] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[75] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[76] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[77] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[78] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[79] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[80] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[81] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[82] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[83] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[84] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[85] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[86] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[87] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[88] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[89] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[90] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[91] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[92] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[93] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[94] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+WARNING: [Synth 8-6014] Unused sequential element timeSeries_reg[95] was removed.  [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:123]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net optemp[32] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[0] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[2] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[34] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[4] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[36] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[6] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[38] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[8] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[40] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[10] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[42] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[12] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[44] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[14] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[46] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[16] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[48] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[18] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[50] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[20] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[52] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[22] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[54] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[24] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[56] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[26] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[58] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[28] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[60] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[30] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[62] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[33] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[35] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[37] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[39] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[41] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[43] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[45] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[47] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[49] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[51] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[53] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[55] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[57] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[59] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[61] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[63] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[96] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[160] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[288] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[544] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[192] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[193] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[194] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[195] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[196] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[197] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[198] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[199] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[200] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[201] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[202] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[203] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[204] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[205] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[206] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[207] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[208] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[209] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[210] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[211] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[212] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[213] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[214] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[215] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[216] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[217] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[218] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[219] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[220] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[221] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[222] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[223] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[224] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[225] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[226] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[227] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[228] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[229] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[230] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[231] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[232] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[233] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[234] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[235] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[236] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[237] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[238] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+WARNING: [Synth 8-3848] Net optemp[239] in module/entity FFTBRNC_v1_0 does not have driver. [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:135]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 1st driver pin 'FFTBRNC_v1_0:/FFTBRNC_v1_0_M00_AXIS_inst/M_AXIS_TSTRB[0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 2nd driver pin 'VCC' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 1st driver pin 'FFTBRNC_v1_0:/FFTBRNC_v1_0_M00_AXIS_inst/M_AXIS_TSTRB[1]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 2nd driver pin 'VCC' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 1st driver pin 'FFTBRNC_v1_0:/FFTBRNC_v1_0_M00_AXIS_inst/M_AXIS_TSTRB[2]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 2nd driver pin 'VCC' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 1st driver pin 'FFTBRNC_v1_0:/FFTBRNC_v1_0_M00_AXIS_inst/M_AXIS_TSTRB[3]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 with 2nd driver pin 'VCC' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v-21.8 is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'FFTBRNC_v1_0' (3#1) [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FFTBRNC_0_0' (4#1) [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ip/design_1_FFTBRNC_0_0/synth/design_1_FFTBRNC_0_0.v:57]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[31]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[30]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[29]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[28]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[27]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[26]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[25]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[24]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[23]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[22]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[21]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[20]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[19]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[18]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[17]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[16]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[15]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[14]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[13]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[12]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[11]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[10]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[9]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[8]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[7]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[6]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[5]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[4]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[3]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[2]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[1]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TDATA[0]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design FFTBRNC_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 504.918 ; gain = 236.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 504.918 ; gain = 236.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 504.918 ; gain = 236.797
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z007sclg225-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 997.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 997.180 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1027.613 ; gain = 30.434
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'FFTBRNC_v1_0_M00_AXIS'
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mst_exec_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "mst_exec_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[18][31:0]' into 'freqSeries_reg[2][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[19][31:0]' into 'freqSeries_reg[3][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[20][31:0]' into 'freqSeries_reg[4][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[21][31:0]' into 'freqSeries_reg[5][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[22][31:0]' into 'freqSeries_reg[6][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[23][31:0]' into 'freqSeries_reg[7][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[24][31:0]' into 'freqSeries_reg[8][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[25][31:0]' into 'freqSeries_reg[9][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[26][31:0]' into 'freqSeries_reg[10][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[27][31:0]' into 'freqSeries_reg[11][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[28][31:0]' into 'freqSeries_reg[12][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[29][31:0]' into 'freqSeries_reg[13][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[30][31:0]' into 'freqSeries_reg[14][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[31][31:0]' into 'freqSeries_reg[15][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[81][31:0]' into 'freqSeries_reg[65][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[82][31:0]' into 'freqSeries_reg[66][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[83][31:0]' into 'freqSeries_reg[67][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[84][31:0]' into 'freqSeries_reg[68][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[85][31:0]' into 'freqSeries_reg[69][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[86][31:0]' into 'freqSeries_reg[70][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[87][31:0]' into 'freqSeries_reg[71][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[88][31:0]' into 'freqSeries_reg[72][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[89][31:0]' into 'freqSeries_reg[73][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[90][31:0]' into 'freqSeries_reg[74][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[91][31:0]' into 'freqSeries_reg[75][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[92][31:0]' into 'freqSeries_reg[76][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[93][31:0]' into 'freqSeries_reg[77][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[94][31:0]' into 'freqSeries_reg[78][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[95][31:0]' into 'freqSeries_reg[79][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[128][31:0]' into 'freqSeries_reg[64][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[129][31:0]' into 'freqSeries_reg[65][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[130][31:0]' into 'freqSeries_reg[66][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[131][31:0]' into 'freqSeries_reg[67][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[132][31:0]' into 'freqSeries_reg[68][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[133][31:0]' into 'freqSeries_reg[69][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[134][31:0]' into 'freqSeries_reg[70][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[135][31:0]' into 'freqSeries_reg[71][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[136][31:0]' into 'freqSeries_reg[72][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[137][31:0]' into 'freqSeries_reg[73][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[138][31:0]' into 'freqSeries_reg[74][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[139][31:0]' into 'freqSeries_reg[75][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[140][31:0]' into 'freqSeries_reg[76][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[141][31:0]' into 'freqSeries_reg[77][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[142][31:0]' into 'freqSeries_reg[78][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[143][31:0]' into 'freqSeries_reg[79][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[144][31:0]' into 'freqSeries_reg[80][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[145][31:0]' into 'freqSeries_reg[65][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[146][31:0]' into 'freqSeries_reg[66][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[147][31:0]' into 'freqSeries_reg[67][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[148][31:0]' into 'freqSeries_reg[68][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[149][31:0]' into 'freqSeries_reg[69][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[150][31:0]' into 'freqSeries_reg[70][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[151][31:0]' into 'freqSeries_reg[71][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[152][31:0]' into 'freqSeries_reg[72][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[153][31:0]' into 'freqSeries_reg[73][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[154][31:0]' into 'freqSeries_reg[74][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[155][31:0]' into 'freqSeries_reg[75][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[156][31:0]' into 'freqSeries_reg[76][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[157][31:0]' into 'freqSeries_reg[77][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[158][31:0]' into 'freqSeries_reg[78][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[159][31:0]' into 'freqSeries_reg[79][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[256][31:0]' into 'freqSeries_reg[64][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[257][31:0]' into 'freqSeries_reg[65][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[258][31:0]' into 'freqSeries_reg[66][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[259][31:0]' into 'freqSeries_reg[67][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[260][31:0]' into 'freqSeries_reg[68][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[261][31:0]' into 'freqSeries_reg[69][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[262][31:0]' into 'freqSeries_reg[70][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[263][31:0]' into 'freqSeries_reg[71][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[264][31:0]' into 'freqSeries_reg[72][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[265][31:0]' into 'freqSeries_reg[73][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[266][31:0]' into 'freqSeries_reg[74][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[267][31:0]' into 'freqSeries_reg[75][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[268][31:0]' into 'freqSeries_reg[76][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[269][31:0]' into 'freqSeries_reg[77][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[270][31:0]' into 'freqSeries_reg[78][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[271][31:0]' into 'freqSeries_reg[79][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[272][31:0]' into 'freqSeries_reg[80][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[273][31:0]' into 'freqSeries_reg[65][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[274][31:0]' into 'freqSeries_reg[66][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[275][31:0]' into 'freqSeries_reg[67][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[276][31:0]' into 'freqSeries_reg[68][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[277][31:0]' into 'freqSeries_reg[69][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[278][31:0]' into 'freqSeries_reg[70][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[279][31:0]' into 'freqSeries_reg[71][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[280][31:0]' into 'freqSeries_reg[72][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[281][31:0]' into 'freqSeries_reg[73][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[282][31:0]' into 'freqSeries_reg[74][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[283][31:0]' into 'freqSeries_reg[75][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[284][31:0]' into 'freqSeries_reg[76][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[285][31:0]' into 'freqSeries_reg[77][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[286][31:0]' into 'freqSeries_reg[78][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[287][31:0]' into 'freqSeries_reg[79][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[512][31:0]' into 'freqSeries_reg[64][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[513][31:0]' into 'freqSeries_reg[65][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[514][31:0]' into 'freqSeries_reg[66][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[515][31:0]' into 'freqSeries_reg[67][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[516][31:0]' into 'freqSeries_reg[68][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[517][31:0]' into 'freqSeries_reg[69][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Synth 8-4471] merging register 'freqSeries_reg[518][31:0]' into 'freqSeries_reg[70][31:0]' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:220]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "timeSeries_reg[1022]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeSeries_reg[1023]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+            INIT_COUNTER |                               01 |                               01
+             SEND_STREAM |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'FFTBRNC_v1_0_M00_AXIS'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |muxpart__5_FFTBRNC_v1_0 |           1|     65504|
+|2     |FFTBRNC_v1_0__GB1       |           1|      1352|
+|3     |FFTBRNC_v1_0__GB2       |           1|     16736|
+|4     |FFTBRNC_v1_0__GB3       |           1|     20899|
+|5     |FFTBRNC_v1_0__GB4       |           1|     26394|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 128   
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 32    
+	   5 Input      1 Bit       Adders := 44    
+	   4 Input      1 Bit       Adders := 64    
+	   3 Input      1 Bit       Adders := 31    
+	   6 Input      1 Bit       Adders := 21    
+	  16 Input      1 Bit       Adders := 2     
+	   7 Input      1 Bit       Adders := 12    
+	   8 Input      1 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 16    
++---Registers : 
+	               32 Bit    Registers := 1859  
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 33    
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FFTBRNC_v1_0_M00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module FFTBRNC_v1_0_S00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module FFTBRNC_v1_0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 128   
+	   2 Input      2 Bit       Adders := 32    
+	   5 Input      1 Bit       Adders := 44    
+	   4 Input      1 Bit       Adders := 64    
+	   3 Input      1 Bit       Adders := 31    
+	   6 Input      1 Bit       Adders := 21    
+	  16 Input      1 Bit       Adders := 2     
+	   7 Input      1 Bit       Adders := 12    
+	   8 Input      1 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 16    
++---Registers : 
+	               32 Bit    Registers := 1858  
+	                2 Bit    Registers := 33    
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "timeSeries_reg[1023]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "matrix_done" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeSeries_reg[1022]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3917] design design_1_FFTBRNC_0_0 has port m00_axis_tstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_FFTBRNC_0_0 has port m00_axis_tstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_FFTBRNC_0_0 has port m00_axis_tstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_FFTBRNC_0_0 has port m00_axis_tstrb[0] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/matrix_done_reg)
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][1]' (FDE) to 'insti_3/freqSeries_reg[96][2]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][2]' (FDE) to 'insti_3/freqSeries_reg[96][3]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][3]' (FDE) to 'insti_3/freqSeries_reg[96][4]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][4]' (FDE) to 'insti_3/freqSeries_reg[96][5]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][5]' (FDE) to 'insti_3/freqSeries_reg[96][6]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][6]' (FDE) to 'insti_3/freqSeries_reg[96][7]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][7]' (FDE) to 'insti_3/freqSeries_reg[96][8]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][8]' (FDE) to 'insti_3/freqSeries_reg[96][9]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][9]' (FDE) to 'insti_3/freqSeries_reg[96][10]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][10]' (FDE) to 'insti_3/freqSeries_reg[96][11]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][11]' (FDE) to 'insti_3/freqSeries_reg[96][12]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][12]' (FDE) to 'insti_3/freqSeries_reg[96][13]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][13]' (FDE) to 'insti_3/freqSeries_reg[96][14]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][14]' (FDE) to 'insti_3/freqSeries_reg[96][15]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][15]' (FDE) to 'insti_3/freqSeries_reg[96][16]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][16]' (FDE) to 'insti_3/freqSeries_reg[96][17]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][17]' (FDE) to 'insti_3/freqSeries_reg[96][18]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][18]' (FDE) to 'insti_3/freqSeries_reg[96][19]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][19]' (FDE) to 'insti_3/freqSeries_reg[96][20]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][20]' (FDE) to 'insti_3/freqSeries_reg[96][21]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][21]' (FDE) to 'insti_3/freqSeries_reg[96][22]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][22]' (FDE) to 'insti_3/freqSeries_reg[96][23]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][23]' (FDE) to 'insti_3/freqSeries_reg[96][24]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][24]' (FDE) to 'insti_3/freqSeries_reg[96][25]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][25]' (FDE) to 'insti_3/freqSeries_reg[96][26]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][26]' (FDE) to 'insti_3/freqSeries_reg[96][27]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][27]' (FDE) to 'insti_3/freqSeries_reg[96][28]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][28]' (FDE) to 'insti_3/freqSeries_reg[96][29]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][29]' (FDE) to 'insti_3/freqSeries_reg[96][30]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[96][30]' (FDE) to 'insti_3/freqSeries_reg[96][31]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][1]' (FDE) to 'insti_3/freqSeries_reg[97][2]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][2]' (FDE) to 'insti_3/freqSeries_reg[97][3]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][3]' (FDE) to 'insti_3/freqSeries_reg[97][4]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][4]' (FDE) to 'insti_3/freqSeries_reg[97][5]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][5]' (FDE) to 'insti_3/freqSeries_reg[97][6]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][6]' (FDE) to 'insti_3/freqSeries_reg[97][7]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][7]' (FDE) to 'insti_3/freqSeries_reg[97][8]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][8]' (FDE) to 'insti_3/freqSeries_reg[97][9]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][9]' (FDE) to 'insti_3/freqSeries_reg[97][10]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][10]' (FDE) to 'insti_3/freqSeries_reg[97][11]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][11]' (FDE) to 'insti_3/freqSeries_reg[97][12]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][12]' (FDE) to 'insti_3/freqSeries_reg[97][13]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][13]' (FDE) to 'insti_3/freqSeries_reg[97][14]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][14]' (FDE) to 'insti_3/freqSeries_reg[97][15]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][15]' (FDE) to 'insti_3/freqSeries_reg[97][16]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][16]' (FDE) to 'insti_3/freqSeries_reg[97][17]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][17]' (FDE) to 'insti_3/freqSeries_reg[97][18]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][18]' (FDE) to 'insti_3/freqSeries_reg[97][19]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][19]' (FDE) to 'insti_3/freqSeries_reg[97][20]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][20]' (FDE) to 'insti_3/freqSeries_reg[97][21]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][21]' (FDE) to 'insti_3/freqSeries_reg[97][22]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][22]' (FDE) to 'insti_3/freqSeries_reg[97][23]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][23]' (FDE) to 'insti_3/freqSeries_reg[97][24]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][24]' (FDE) to 'insti_3/freqSeries_reg[97][25]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][25]' (FDE) to 'insti_3/freqSeries_reg[97][26]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][26]' (FDE) to 'insti_3/freqSeries_reg[97][27]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][27]' (FDE) to 'insti_3/freqSeries_reg[97][28]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][28]' (FDE) to 'insti_3/freqSeries_reg[97][29]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][29]' (FDE) to 'insti_3/freqSeries_reg[97][30]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[97][30]' (FDE) to 'insti_3/freqSeries_reg[97][31]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][1]' (FDE) to 'insti_3/freqSeries_reg[98][2]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][2]' (FDE) to 'insti_3/freqSeries_reg[98][3]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][3]' (FDE) to 'insti_3/freqSeries_reg[98][4]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][4]' (FDE) to 'insti_3/freqSeries_reg[98][5]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][5]' (FDE) to 'insti_3/freqSeries_reg[98][6]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][6]' (FDE) to 'insti_3/freqSeries_reg[98][7]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][7]' (FDE) to 'insti_3/freqSeries_reg[98][8]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][8]' (FDE) to 'insti_3/freqSeries_reg[98][9]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][9]' (FDE) to 'insti_3/freqSeries_reg[98][10]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][10]' (FDE) to 'insti_3/freqSeries_reg[98][11]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][11]' (FDE) to 'insti_3/freqSeries_reg[98][12]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][12]' (FDE) to 'insti_3/freqSeries_reg[98][13]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][13]' (FDE) to 'insti_3/freqSeries_reg[98][14]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][14]' (FDE) to 'insti_3/freqSeries_reg[98][15]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][15]' (FDE) to 'insti_3/freqSeries_reg[98][16]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][16]' (FDE) to 'insti_3/freqSeries_reg[98][17]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][17]' (FDE) to 'insti_3/freqSeries_reg[98][18]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][18]' (FDE) to 'insti_3/freqSeries_reg[98][19]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][19]' (FDE) to 'insti_3/freqSeries_reg[98][20]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][20]' (FDE) to 'insti_3/freqSeries_reg[98][21]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][21]' (FDE) to 'insti_3/freqSeries_reg[98][22]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][22]' (FDE) to 'insti_3/freqSeries_reg[98][23]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][23]' (FDE) to 'insti_3/freqSeries_reg[98][24]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][24]' (FDE) to 'insti_3/freqSeries_reg[98][25]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][25]' (FDE) to 'insti_3/freqSeries_reg[98][26]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][26]' (FDE) to 'insti_3/freqSeries_reg[98][27]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][27]' (FDE) to 'insti_3/freqSeries_reg[98][28]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][28]' (FDE) to 'insti_3/freqSeries_reg[98][29]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][29]' (FDE) to 'insti_3/freqSeries_reg[98][30]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[98][30]' (FDE) to 'insti_3/freqSeries_reg[98][31]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][1]' (FDE) to 'insti_3/freqSeries_reg[99][2]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][2]' (FDE) to 'insti_3/freqSeries_reg[99][3]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][3]' (FDE) to 'insti_3/freqSeries_reg[99][4]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][4]' (FDE) to 'insti_3/freqSeries_reg[99][5]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][5]' (FDE) to 'insti_3/freqSeries_reg[99][6]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][6]' (FDE) to 'insti_3/freqSeries_reg[99][7]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][7]' (FDE) to 'insti_3/freqSeries_reg[99][8]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][8]' (FDE) to 'insti_3/freqSeries_reg[99][9]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][9]' (FDE) to 'insti_3/freqSeries_reg[99][10]'
+INFO: [Synth 8-3886] merging instance 'insti_3/freqSeries_reg[99][10]' (FDE) to 'insti_3/freqSeries_reg[99][11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/i_5/\addr_stream_out_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[71][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[32][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[32][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[33][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[33][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[34][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[34][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[35][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[35][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[36][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[36][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[37][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[37][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[38][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[38][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[39][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[39][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[40][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[40][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[41][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[41][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[42][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[42][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[43][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[43][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[44][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[44][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[45][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[45][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[46][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[46][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[47][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[47][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[48][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[48][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[49][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[49][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[50][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[50][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[51][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[51][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[52][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[52][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[53][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[53][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[54][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[54][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[55][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[55][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[56][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[56][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[57][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[57][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[58][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[58][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[59][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[59][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[60][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[60][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[61][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[61][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[62][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[62][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[63][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[63][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[96][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (insti_3/\freqSeries_reg[96][31] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/busy_reg/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:180]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/transfer_reg/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:254]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:254]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:254]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[31]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[30]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[29]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[28]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[27]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[26]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[25]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[24]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[23]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[22]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[21]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[20]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[19]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[18]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[17]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[16]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[15]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[14]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[13]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[12]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[11]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[10]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[9]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[8]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[7]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[6]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[5]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0_M00_AXIS.v:91]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/last_transfer_reg/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:262]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:262]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:262]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/brdone_reg/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:180]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:180]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][31]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][30]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][29]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][28]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][27]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][26]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][25]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][24]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][23]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][22]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][21]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][20]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][19]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][18]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'insti_3/freqSeries_reg[0][17]/Q' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:170]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |FFTBRNC_v1_0__GB4 |           1|       150|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |FFTBRNC_v1_0__GB4 |           1|       150|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\inst/op_data_reg[27] ) from module (design_1_FFTBRNC_0_0) as it has self-loop and (\inst/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[4] ) is actual driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:232]
+INFO: [Synth 8-5966] Removing register instance (\inst/op_data_reg[28] ) from module (design_1_FFTBRNC_0_0) as it has self-loop and (\inst/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[3] ) is actual driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:232]
+INFO: [Synth 8-5966] Removing register instance (\inst/op_data_reg[29] ) from module (design_1_FFTBRNC_0_0) as it has self-loop and (\inst/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[2] ) is actual driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:232]
+INFO: [Synth 8-5966] Removing register instance (\inst/op_data_reg[30] ) from module (design_1_FFTBRNC_0_0) as it has self-loop and (\inst/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[1] ) is actual driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:232]
+INFO: [Synth 8-5966] Removing register instance (\inst/op_data_reg[31] ) from module (design_1_FFTBRNC_0_0) as it has self-loop and (\inst/FFTBRNC_v1_0_M00_AXIS_inst/stream_data_out_reg[0] ) is actual driver [c:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/ipshared/e676/hdl/FFTBRNC_v1_0.v:232]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     3|
+|2     |LUT2 |     2|
+|3     |LUT3 |     3|
+|4     |LUT4 |     5|
+|5     |LUT5 |     4|
+|6     |LUT6 |     1|
+|7     |FDRE |    15|
+|8     |FDSE |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      |    34|
+|2     |  inst                         |FFTBRNC_v1_0          |    34|
+|3     |    FFTBRNC_v1_0_M00_AXIS_inst |FFTBRNC_v1_0_M00_AXIS |    34|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 279 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 1028.621 ; gain = 236.797
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1028.621 ; gain = 760.500
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1028.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+349 Infos, 263 Warnings, 197 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1028.621 ; gain = 760.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1028.621 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ip_repo/edit_FFT_BR_v1_0.runs/design_1_FFTBRNC_0_0_synth_1/design_1_FFTBRNC_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_FFTBRNC_0_0, cache-ID = 70ae70c32564ba85
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1028.621 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/ip_repo/edit_FFT_BR_v1_0.runs/design_1_FFTBRNC_0_0_synth_1/design_1_FFTBRNC_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_FFTBRNC_0_0_utilization_synth.rpt -pb design_1_FFTBRNC_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 12 23:15:37 2020...

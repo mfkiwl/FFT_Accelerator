@@ -1,0 +1,32 @@
+23:02:52 **** Auto Build of configuration Debug for project standalone_bsp_0_xgpiops_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/fft_br.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/fft_br.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/fft_br.d" -MT"src/fft_br.o" -o "src/fft_br.o" "../src/fft_br.c"
+'Finished building: ../src/fft_br.c'
+' '
+'Building file: ../src/testbench.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testbench.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/testbench.d" -MT"src/testbench.o" -o "src/testbench.o" "../src/testbench.c"
+In file included from ../src/testbench.c:22:0:
+../../standalone_bsp_0/ps7_cortexa9_0/include/xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/testbench.c'
+' '
+'Building target: standalone_bsp_0_xgpiops_intr_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "standalone_bsp_0_xgpiops_intr_example_1.elf"  ./src/fft_br.o ./src/testbench.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: standalone_bsp_0_xgpiops_intr_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size standalone_bsp_0_xgpiops_intr_example_1.elf  |tee "standalone_bsp_0_xgpiops_intr_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80920	1059348	4217696	5357964	 51c18c	standalone_bsp_0_xgpiops_intr_example_1.elf
+'Finished building: standalone_bsp_0_xgpiops_intr_example_1.elf.size'
+' '
+
+23:02:58 Build Finished (took 6s.340ms)
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="FFT" xd:componentRef="FFT" xd:initiationInterval="x" xd:clockPeriod="25.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="array[].real" xd:originalName="array" xd:direction="in" xd:interfaceRef="array_r" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:0" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="array[].imag" xd:originalName="array" xd:direction="in" xd:interfaceRef="array_r" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="array[].last" xd:originalName="array" xd:direction="in" xd:interfaceRef="array_r" xd:busTypeRef="axis" xd:arraySize="1024" xd:dataWidth="1"/>
+  <xd:arg xd:name="oparray[].real" xd:originalName="oparray" xd:direction="out" xd:interfaceRef="oparray" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:0" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="oparray[].imag" xd:originalName="oparray" xd:direction="out" xd:interfaceRef="oparray" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="oparray[].last" xd:originalName="oparray" xd:direction="out" xd:interfaceRef="oparray" xd:busTypeRef="axis" xd:arraySize="1024" xd:dataWidth="1"/>
+  <xd:arg xd:name="control" xd:originalName="control" xd:direction="in" xd:interfaceRef="s_axi_CONTROL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="11857" xd:FF="5003" xd:BRAM="8" xd:DSP="44"/>
+</xd:acceleratorMap>

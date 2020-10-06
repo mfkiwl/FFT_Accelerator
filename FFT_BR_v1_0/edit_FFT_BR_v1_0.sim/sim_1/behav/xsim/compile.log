@@ -1,0 +1,96 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/sim/bd_48ac.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac
+INFO: [VRFC 10-311] analyzing module clk_map_imp_1NMB928
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_CVVFJV
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_Z1B1P3
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_1C3JDRS
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_1FAO4F6
+INFO: [VRFC 10-311] analyzing module s01_entry_pipeline_imp_F11SX8
+INFO: [VRFC 10-311] analyzing module s01_nodes_imp_AIXRF8
+INFO: [VRFC 10-311] analyzing module switchboards_imp_1MKJLH2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_48ac_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_48ac_arsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_arsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_48ac_rsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_rsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_48ac_awsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_awsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_48ac_wsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_wsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_48ac_bsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_bsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_48ac_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_48ac_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_48ac_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_48ac_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_48ac_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_48ac_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_48ac_s01mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_48ac_s01tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_48ac_s01sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_48ac_s01a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_s01a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_48ac_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_48ac_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_48ac_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_48ac_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_48ac_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_48ac_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_48ac_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_48ac_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_48ac_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_48ac_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_48ac_m00e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/sim/design_1_smartconnect_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_axi_interconnect_0_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_O7FAN0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ipshared/edit_FFTBR_v1_0.srcs/sources_1/imports/FFTBR_1.0/src/BR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ipshared/edit_FFTBR_v1_0.srcs/sources_1/imports/FFTBR_1.0/src/FFT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFT
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ipshared/edit_FFTBR_v1_0.srcs/sources_1/imports/FFTBR_1.0/hdl/FFTBR_v1_0_M00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFTBR_v1_0_M00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ipshared/edit_FFTBR_v1_0.srcs/sources_1/imports/FFTBR_1.0/hdl/FFTBR_v1_0_S00_AXIS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFTBR_v1_0_S00_AXIS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ipshared/edit_FFTBR_v1_0.srcs/sources_1/imports/FFTBR_1.0/hdl/FFTBR_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FFTBR_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_FFTBR_0_0/sim/design_1_FFTBR_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_FFTBR_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/ip_repo/edit_FFT_BR_v1_0.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_proc_sys_reset_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_48ac_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_48ac_psr_aclk_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/ip_repo/edit_FFT_BR_v1_0.ip_user_files/bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_axi_dma_0_0'

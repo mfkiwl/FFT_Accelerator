@@ -1,0 +1,94 @@
+/******************************************************************************
+ * Prepared by Zafer Esen <zafer.esen@it.uu.se> for the course 1DT109.
+ * Last modified: 2020-05-19
+ ******************************************************************************/
+
+/* Remove includes which are not used */
+#include <stdio.h>
+#include "fft_br.h"
+
+/* The three files containing input and expected output data */
+#include "inReal.h"
+#include "outReal.h"
+#include "outImag.h"
+
+/* You might need the following in your FFT application. It is also needed
+   for the floating point abs function (fabsf) which is used in the example.
+   If you include this, you need to also add -lm to your linker flags as shown
+   here: https://www.xilinx.com/support/answers/52971.html */
+#include <math.h>
+
+/* For keeping time. */
+#include "xtime_l.h"
+
+#define NUM_SAMPLES 262144 /* for float, this would mean 1 MiB of samples */
+
+/* Tolerances for expected vs calculated results. You might need to adjust these
+   values dependig on the data types you use. */
+#define SMALL_TOLERANCE  0.01f /* for values less than 1 */
+#define LARGER_TOLERANCE 0.1f  /* for values larger than */
+
+/* Assuming you have declared a Complex data type, possibly a struct, with
+   two fields forthe real and imaginary parts, re and im respectively.
+   we declare two arrays for keeping input samples and the output frequency
+   values. These will get placed at PS7 DDR (check the linker script) */
+cmplx X[NUM_SAMPLES];
+cmplx F[NUM_SAMPLES];
+
+/*******************************************************************************
+ * Utility functions for keeping time. Feel free to adapt to your needs.
+ *****************************************************************************/
+XTime tStart[4], tEnd[4];
+
+/* Starts timer n and prints info. */
+void tick(int n) {
+	printf("[%d] Timer started...\n",n);
+	XTime_GetTime(&tStart[n]);
+}
+
+/* Stops timer n and prints its value in microseconds. */
+void tock(int n) {
+	XTime_GetTime(&tEnd[n]);
+	printf("[%d] Timer stopped...\n",n);
+	printf("[%d] Elapsed time : %.2f us.\n", n, 1.0 * (tEnd[n] - tStart[n]) / (COUNTS_PER_SECOND/1000000));
+}
+/******************************************************************************/
+
+/* integrate with your own code, below is an example */
+int main()
+{
+  //init_platform();
+
+  /* Convert the provided real inputs to complex ones */
+
+  populate(X,NUM_SAMPLES);
+
+
+  printf("starting fft...\n");
+  tick(0);
+  FFT(X, F, NUM_SAMPLES);
+  tock(0);
+
+  /* Below part compares the calculated result with the expected ones, and
+     reports any mismatches. */
+  int numMismatches = 0;
+  float tolReal, tolImag;
+  for(int i = 0; i < NUM_SAMPLES; ++i){
+    tolReal = outReal[i] < 1.0 ? SMALL_TOLERANCE : LARGER_TOLERANCE;
+    tolImag = outImag[i] < 1.0 ? SMALL_TOLERANCE : LARGER_TOLERANCE;
+
+    if(fabsf(outReal[i] - F[i].real) > tolReal || fabsf(outImag[i] - F[i].imag) > tolImag){
+      //printf("Results do not match at index %d!\n", i);
+      //printf("Expected: (%f,%fi), calculated: (%f,%fi)\n", outReal[i], outImag[i], f[i].a, f[i].b);
+      numMismatches++;
+    }
+    // 	printf("Expected: (%f,%fi), calculated: (%f,%fi)\n", outReal[i], outImag[i], f[i].a, f[i].b);
+  }
+
+  if (numMismatches > 0)
+    printf("Number of differences: %d out of %d", numMismatches, NUM_SAMPLES);
+  else printf("Success! Results match with expected output!\n");
+
+  //cleanup_platform();
+  return 0;
+}

@@ -1,0 +1,163 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xfft.h"
+#include "xaxidma.h"
+#include <xparameters.h>
+
+#include "inReal.h"
+#include "outReal.h"
+#include "outImag.h"
+#include "fft_br.h"
+#include <math.h>
+#include "stdint.h"
+#include "xtime_l.h"
+
+XFft fft;
+XFft_Config *fft_cfg;
+
+XAxiDma axiDMA;
+XAxiDma_Config *axiDMA_cfg;
+
+#define MEM_BASE_ADDR   0x01000000
+#define TX_BUFFER_BASE  (MEM_BASE_ADDR + 0x00100000)
+#define RX_BUFFER_BASE  (MEM_BASE_ADDR + 0x00300000)
+
+#define NUM_SAMPLES N
+#define SMALL_TOLERANCE  0.01f /* for values less than 1 */
+#define LARGER_TOLERANCE 0.1f
+
+cmplx X[NUM_SAMPLES];
+cmplx F[NUM_SAMPLES];
+//#define N 1024;
+
+XTime tStart[4], tEnd[4];
+
+/* Starts timer n and prints info. */
+void tick(int n) {
+	printf("[%d] Timer started...\n",n);
+	XTime_GetTime(&tStart[n]);
+}
+
+/* Stops timer n and prints its value in microseconds. */
+void tock(int n) {
+	XTime_GetTime(&tEnd[n]);
+	printf("[%d] Timer stopped...\n",n);
+	printf("[%d] Elapsed time : %.2f us.\n", n, 1.0 * (tEnd[n] - tStart[n]) / (COUNTS_PER_SECOND/1000000));
+}
+
+
+void populate(cmplx *array, int len)
+{
+	for(int i=0; i<len;i++)
+	{
+		array[i].real = inReal[i];
+	}
+}
+
+void initPeripherals()
+{
+	printf("Initializing FFT\n");
+	fft_cfg = XFft_LookupConfig(XPAR_FFT_0_DEVICE_ID);
+	if(fft_cfg)
+	{
+		int status = XFft_CfgInitialize(&fft, fft_cfg);
+		if(status != XST_SUCCESS)
+		{
+			printf("Error initializing FFT\n");
+		}
+	}
+
+	printf("Initializing AxiDMA\n");
+	axiDMA_cfg = XAxiDma_LookupConfig(XPAR_AXIDMA_0_DEVICE_ID);
+	if(axiDMA_cfg)
+	{
+		int status = XAxiDma_CfgInitialize(&axiDMA, axiDMA_cfg);
+		if(status != XST_SUCCESS)
+		{
+			printf("Error initializing DMA \n");
+		}
+	}
+
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(&axiDMA, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+}
+
+
+
+int main()
+{
+    init_platform();
+
+    initPeripherals();
+
+    cmplx *m_dma_buffer_TX = (cmplx*) TX_BUFFER_BASE;
+    cmplx *m_dma_buffer_RX = (cmplx*) RX_BUFFER_BASE;
+    	int c;
+    	printf("enter c:");
+    	scanf("%d", &c);
+    	XFft_Set_control(&fft, c);
+    	tick(0);
+    	XFft_Start(&fft);
+
+    	populate(X,NUM_SAMPLES);
+
+    	//Flush cache of the buffers.
+    	//Xil_DCacheFlushRange((u32)&array[0], N*sizeof(float),XAXIDMA_DMA_TO_DEVICE);
+    	//Xil_DCacheFlushRange((u32)m_dma_buffer_RX, N*sizeof(float),XAXIDMA_DEVICE_TO_DMA);
+
+
+    	//Sending data from DMA to PL
+    	XAxiDma_SimpleTransfer(&axiDMA, (u32)&X[0].real, N*sizeof(cmplx), XAXIDMA_DMA_TO_DEVICE);
+
+    	//Receiving data from PL
+    	XAxiDma_SimpleTransfer(&axiDMA, (u32)m_dma_buffer_RX, N*sizeof(cmplx), XAXIDMA_DEVICE_TO_DMA);
+
+    	//while(XAxiDma_Busy(&axiDMA, XAXIDMA_DEVICE_TO_DMA));
+
+    	//Invalidate the cache to avoid reading garbage values.
+    	Xil_DCacheInvalidateRange((u32)m_dma_buffer_RX, N*sizeof(cmplx));
+
+    	tock(0);
+
+    	//while(!XFft_IsDone(&fft));
+    	printf("FFt completed\n");
+
+    	int numMismatches = 0;
+    	  float tolReal, tolImag;
+    	  for(int i = 0; i < NUM_SAMPLES; ++i)
+    	  {
+    	    tolReal = outReal[i] < 1.0 ? SMALL_TOLERANCE : LARGER_TOLERANCE;
+    	    tolImag = outImag[i] < 1.0 ? SMALL_TOLERANCE : LARGER_TOLERANCE;
+
+    	    if(fabsf(outReal[i] - F[i].real) > tolReal || fabsf(outImag[i] - F[i].imag) > tolImag)
+    	    {
+    	      //printf("Results do not match at index %d!\n", i);
+    	      //printf("Expected: (%f,%fi), calculated: (%f,%fi)\n", outReal[i], outImag[i], f[i].a, f[i].b);
+    	      numMismatches++;
+    	    }
+    	    // 	printf("Expected: (%f,%fi), calculated: (%f,%fi)\n", outReal[i], outImag[i], f[i].a, f[i].b);
+    	  }
+
+    	  if (numMismatches > 0)
+    	    printf("Number of differences: %d out of %d", numMismatches, NUM_SAMPLES);
+    	  else
+    	  printf("Success! Results match with expected output!\n");
+
+
+    	  for(int i = 0; i<N; i++)
+    	  {
+    		  printf("%f\n", m_dma_buffer_RX[i].real);
+    	  }
+
+    	  printf("Imaginary part\n\n");
+
+    	  for(int i = 0; i<N; i++)
+    	      	  {
+    	      		  printf("%f\n", m_dma_buffer_RX[i].imag);
+    	      	  }
+
+
+    cleanup_platform();
+    return 0;
+}

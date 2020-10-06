@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# hsi v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Fri Jun 12 17:55:03 2020
+# Process ID: 1600
+# Current directory: C:/ip_repo/edit_FFT_BR_v1_0.sdk
+# Command line: hsi.exe -mode tcl
+# Log file: C:/ip_repo/edit_FFT_BR_v1_0.sdk/hsi.log
+# Journal file: C:/ip_repo/edit_FFT_BR_v1_0.sdk\hsi.jou
+#-----------------------------------------------------------
+open_hw_design system.hdf

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include "stdint.h"
+
+
+
+#define N 1024
+
+typedef struct cn
+{
+    float real;
+    float imag;
+    bool last;
+}  __attribute__((aligned(8))) cmplx;
+
+cmplx cadd(cmplx a , cmplx b);
+cmplx csub(cmplx a , cmplx b);
+cmplx cmul(cmplx a , cmplx b);
+
+//void cooley_tukey(cmplx arr[N], cmplx oparr[N]);
+void FFT(cmplx array[N], cmplx oparray[N], int control);
